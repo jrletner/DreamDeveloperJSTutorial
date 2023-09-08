@@ -43,3 +43,17 @@ console.log(evenNumbers);
 
 let sum = myNumbers.reduce(add);
 console.log(sum);
+
+let myObj = {
+  name: "Joe",
+  age: 46,
+  occupation: "Developer",
+};
+
+console.log("Length", Object.keys(myObj).length);
+
+for (myKey of Object.keys(myObj)) {
+  for (myValues of Object.values(myObj)) {
+    console.log(myKey + ":", myValues);
+  }
+}
